@@ -1,0 +1,21 @@
+---
+language: python
+python: 
+  - "2.7"
+  - "3.5"
+
+# This role needs sudo, thus we can't use the new container infrastructure
+sudo: false
+# sudo: required
+
+# Install ansible
+addons:
+  apt:
+    packages:
+    - python-pip
+
+install:
+  - pip install cookiecutter
+
+script:
+  - cookiecutter --version
