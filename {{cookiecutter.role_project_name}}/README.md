@@ -8,17 +8,17 @@ Ansible role for {{ cookiecutter.role_name }}
 Requirements
 ------------
 
-None.
+The dependencies on other softwares/librarys for this role.
 
 Role Variables
 --------------
 
-None.
+The variables we can use in this role.
 
-Dependencies
-------------
+Role Dependencies
+-----------------
 
-- <The dependencies for your role>
+The dependencies on other roles for this role.
 
 Example Playbook
 ----------------
