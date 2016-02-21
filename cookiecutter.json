@@ -1,3 +1,5 @@
 {
-        "role_project_name": "Project name of Ansible role"
+        "role_project_name": "Project name of Ansible role",
+        "year": "2016",
+        "author": "FGtatsuro"
 }
