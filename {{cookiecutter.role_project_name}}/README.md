@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: all
       roles:
-         - { role: FGtatsuro.{{ cookiecutter.role_name }} }
+         - { role: {{ cookiecutter.author }}.{{ cookiecutter.role_name }} }
 
 Test on local Docker host
 -------------------------
