@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/{{ cookiecutter.author }}/{{ cookiecutter.role_project_name }}.svg?branch=master)](https://travis-ci.org/FGtatsuro/{{ cookiecutter.role_project_name }})
 
-ansible-ansible
-===============
+{{ cookiecutter.role_project_name }}
+====================================
 
 Ansible role for {{ cookiecutter.role_name }}
 
