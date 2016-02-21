@@ -15,7 +15,7 @@ addons:
     - python-pip
 
 install:
-  - pip install cookiecutter
+  - pip install -r requirements.txt
 
 script:
   - cookiecutter --version

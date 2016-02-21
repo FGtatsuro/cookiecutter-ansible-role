@@ -1,0 +1,2 @@
+git+https://github.com/audreyr/cookiecutter.git
+ansible
