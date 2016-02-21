@@ -23,7 +23,7 @@ You can create new project of Ansible role as follows.
     role_project_name [Project name of Ansible role]: project_name
     role_name [Ansible role name]: role_name
     year [2016]:
-    author [If you use your Github username, it's easy to integrate Travis CI]: FGtatsuro
+    author [Your Github username]: FGtatsuro
     
     $ cd project_name
     $ ls
@@ -31,7 +31,7 @@ You can create new project of Ansible role as follows.
     Gemfile.lock README.md    ansible.cfg  files        meta         spec         templates    vars
 
 You can overwrite default value of the field prompt asks with `~/.cookiecutterrc`.
-It's better to overwrite 'author' field.
+It's better to overwrite 'author' field with your Github username.
 
 .. code:: bash
 
