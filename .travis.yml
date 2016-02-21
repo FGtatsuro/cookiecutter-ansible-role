@@ -20,5 +20,3 @@ script:
   - cookiecutter --replay --config-file tests/cookiecutterrc .
   - cd test_project
   - ansible-playbook tests/test.yml -i tests/inventory -l localhost --connection=local -vvvv
-  - bundle install
-  - bundle exec rake spec SPEC_TARGET=localhost
