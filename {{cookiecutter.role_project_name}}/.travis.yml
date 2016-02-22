@@ -9,19 +9,14 @@ sudo: required
 services:
   - docker
 
-# Install ansible
 addons:
   apt:
     packages:
     - python-pip
 
 install:
-  # Install ansible
   - pip install ansible
-
-  # Check ansible version
   - ansible --version
-
   # Resolve dependencies(When target role isn't installed via Ansible Galaxy, auto resolution of dependencies doesn't occur.
   - ansible-galaxy install FGtatsuro.python-requirements
 
