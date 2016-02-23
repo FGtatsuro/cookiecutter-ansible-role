@@ -3,7 +3,7 @@
 {{ cookiecutter.role_project_name }}
 ====================================
 
-Ansible role for {{ cookiecutter.role_name }}
+Ansible role for {{ cookiecutter.role_name }}.
 
 Requirements
 ------------
