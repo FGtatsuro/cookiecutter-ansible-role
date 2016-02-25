@@ -1,2 +1,4 @@
 ---
 # tasks file for {{ cookiecutter.role_name }}
+- name: Run tasks on current environment
+  include: "{{ ansible_os_family }}.yml"
