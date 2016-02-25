@@ -5,6 +5,13 @@ cookiecutter-ansible-role
 
 Cookiecutter template for Ansible role
 
+Requirements
+------------
+
+Cookiecutter (>=1.3.0) (https://github.com/audreyr/cookiecutter)
+
+It's easy to install it with pip.
+
 How To
 ------
 
