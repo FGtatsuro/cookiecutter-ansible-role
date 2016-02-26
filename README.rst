@@ -53,9 +53,19 @@ It's better to overwrite 'author' field with your Github username.
 Attention
 ---------
 
-Generated project depends on the role `FGtatsuro.python-requirements`_ in default.
+Role dependency
+^^^^^^^^^^^^^^^
+
+Generated role project depends on the role `FGtatsuro.python-requirements`_ in default.
 If your role don't need it, please fix `meta/main.yml` and `.travis.yml` in your role project.
+
+Supported platforms
+^^^^^^^^^^^^^^^^^^^
+
+Generated role project supports Debian family(Debian/Ubuntu) and OSX in default.
+Please check files under `tasks` directory. `Ansible document`_ is useful to understand them.
 
 .. |Build Status| image:: https://travis-ci.org/FGtatsuro/cookiecutter-ansible-role.svg?branch=master
    :target: https://travis-ci.org/FGtatsuro/cookiecutter-ansible-role
 .. _FGtatsuro.python-requirements: https://galaxy.ansible.com/FGtatsuro/python-requirements/
+.. _Ansible document: http://docs.ansible.com/ansible/playbooks_conditionals.html
