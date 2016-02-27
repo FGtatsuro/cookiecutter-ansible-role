@@ -1,0 +1,2 @@
+roles/*
+!roles/{{ cookiecutter.role_name }}
