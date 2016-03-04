@@ -62,7 +62,7 @@ If your role don't need it, please fix `meta/main.yml` and `.travis.yml` in your
 Supported platforms
 ^^^^^^^^^^^^^^^^^^^
 
-Generated role project supports Debian family(Debian/Ubuntu) and OSX in default.
+Generated role project supports Debian and OSX in default.
 Please check files under `tasks` directory. `Ansible document`_ is useful to understand them.
 
 .. |Build Status| image:: https://travis-ci.org/FGtatsuro/cookiecutter-ansible-role.svg?branch=master
