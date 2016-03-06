@@ -1,2 +1,5 @@
 roles/*
 !roles/{{ cookiecutter.role_name }}
+
+# Ansible
+tests/*.retry
