@@ -6,7 +6,6 @@ matrix:
       language: generic
       env:
         - TARGET=localhost
-        - CONNECTION=local
     - os: linux
       dist: trusty
       language: python
@@ -26,7 +25,6 @@ matrix:
         - docker rm -f container
       env:
         - TARGET=container
-        - CONNECTION=docker
 
 # This role needs sudo, thus we can't use the new container infrastructure
 # sudo: false
@@ -41,7 +39,7 @@ install:
 script:
   # Basic role syntax check
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
-  - ansible-playbook tests/test.yml -i tests/inventory -l ${TARGET} --connection=${CONNECTION} -vvvv
+  - ansible-playbook tests/test.yml -i tests/inventory -l ${TARGET} -vvvv
   - bundle exec rake spec SPEC_TARGET=${TARGET}
 
 notifications:
