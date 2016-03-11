@@ -21,4 +21,4 @@ script:
   - cd test_project
   # Resolve dependencies(When target role isn't installed via Ansible Galaxy, auto resolution of dependencies doesn't occur.)
   - ansible-galaxy install FGtatsuro.python-requirements
-  - ansible-playbook tests/test.yml -i tests/inventory -l localhost --connection=local -vvvv
+  - ansible-playbook tests/test.yml -i tests/inventory -l localhost -vvvv
