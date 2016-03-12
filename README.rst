@@ -1,7 +1,7 @@
-|Build Status|
-
 cookiecutter-ansible-role
 =========================
+
+|Build Status|
 
 Cookiecutter template for Ansible role
 
@@ -26,12 +26,12 @@ You can create new project of Ansible role as follows.
     remote: Total 99 (delta 32), reused 84 (delta 20), pack-reused 0
     Unpacking objects: 100% (99/99), done.
     Checking connectivity... done.
-    
+
     role_project_name [Project name of Ansible role]: project_name
     role_name [Ansible role name]: role_name
     year [2016]:
     author [Your Github username]: FGtatsuro
-    
+
     $ cd project_name
     $ ls
     Gemfile      LICENSE      Rakefile     defaults     handlers     roles        tasks        tests
@@ -45,10 +45,10 @@ It's better to overwrite 'author' field with your Github username.
     $ cat ~/.cookiecutterrc
     default_context:
         author: "FGtatsuro"
-    
+
     $ cookiecutter gh:FGtatsuro/cookiecutter-ansible-role
     ...
-    author [FGtatsuro]: 
+    author [FGtatsuro]:
 
 Attention
 ---------

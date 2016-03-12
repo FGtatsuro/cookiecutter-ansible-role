@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/{{ cookiecutter.author }}/{{ cookiecutter.role_project_name }}.svg?branch=master)](https://travis-ci.org/FGtatsuro/{{ cookiecutter.role_project_name }})
-
 {{ cookiecutter.role_project_name }}
 ====================================
+
+[![Build Status](https://travis-ci.org/{{ cookiecutter.author }}/{{ cookiecutter.role_project_name }}.svg?branch=master)](https://travis-ci.org/FGtatsuro/{{ cookiecutter.role_project_name }})
 
 Ansible role for {{ cookiecutter.role_name }}.
 
@@ -37,7 +37,7 @@ Test on local Docker host
 -------------------------
 
 This project run tests on Travis CI, but we can also run then on local Docker host.
-Please check `install`, `before_script`, and `script` sections of `.travis.yml`. 
+Please check `install`, `before_script`, and `script` sections of `.travis.yml`.
 We can use same steps of them for local Docker host.
 
 Local requirements are as follows.
