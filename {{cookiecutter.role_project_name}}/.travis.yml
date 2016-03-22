@@ -21,8 +21,8 @@ matrix:
       after_script:
         - docker rm -f container
       env:
-        - TARGET: container
-        - IMAGE_NAME: fgtatsuro/infra-bridgehead:debian-jessie
+        - TARGET=container
+        - IMAGE_NAME=fgtatsuro/infra-bridgehead:debian-jessie
     - os: linux
       dist: trusty
       language: python
@@ -38,8 +38,8 @@ matrix:
       after_script:
         - docker rm -f container
       env:
-        - TARGET: container
-        - IMAGE_NAME: fgtatsuro/infra-bridgehead:alpine-3.3
+        - TARGET=container
+        - IMAGE_NAME=fgtatsuro/infra-bridgehead:alpine-3.3
 
 # This role needs sudo, thus we can't use the new container infrastructure
 # sudo: false
