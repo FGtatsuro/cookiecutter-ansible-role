@@ -8,8 +8,15 @@ matrix:
   include:
     - os: osx
       language: generic
+      install:
+        # Workaround for OSX.
+        - sudo pip install -U setuptools
+        - sudo pip install ansible
+        - ansible-galaxy install FGtatsuro.python-requirements
+        - bundle install
       env:
         - TARGET=localhost
+        # Workaround for OSX.
         - PYTHONPATH="/Library/Python/2.7/site-packages:$PYTHONPATH"
     - os: linux
       dist: trusty
@@ -51,8 +58,7 @@ matrix:
 sudo: required
 
 install:
-  - sudo pip install -U setuptools
-  - sudo pip install ansible
+  - pip install ansible
   # Resolve dependencies(When target role isn't installed via Ansible Galaxy, auto resolution of dependencies doesn't occur.)
   - ansible-galaxy install FGtatsuro.python-requirements
   - bundle install
