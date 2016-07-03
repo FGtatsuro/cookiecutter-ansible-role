@@ -8,6 +8,9 @@ matrix:
   include:
     - os: osx
       language: generic
+      install:
+        - sudo pip install -U setuptools
+        - sudo pip install -r requirements.txt
       env:
         - PYTHONPATH="/Library/Python/2.7/site-packages:$PYTHONPATH"
     - os: linux
@@ -20,8 +23,7 @@ matrix:
 sudo: required
 
 install:
-  - sudo pip install -U setuptools
-  - sudo pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 script:
   - cookiecutter --replay --config-file tests/cookiecutterrc .
