@@ -29,12 +29,12 @@ matrix:
           packages:
           - python-pip
       before_script:
-        - docker run -it -d --name container ${IMAGE_NAME} /bin/sh
+        - docker run -it -d --name ${TARGET} ${IMAGE_NAME} /bin/sh
       after_script:
-        - docker rm -f container
+        - docker rm -f ${TARGET}
       env:
-        - TARGET=container
         - IMAGE_NAME=fgtatsuro/infra-bridgehead:debian-jessie
+        - TARGET=container
     - os: linux
       dist: trusty
       language: python
@@ -46,9 +46,9 @@ matrix:
           packages:
           - python-pip
       before_script:
-        - docker run -it -d --name container ${IMAGE_NAME} /bin/sh
+        - docker run -it -d --name ${TARGET} ${IMAGE_NAME} /bin/sh
       after_script:
-        - docker rm -f container
+        - docker rm -f ${TARGET}
       env:
         - TARGET=container
         - IMAGE_NAME=fgtatsuro/infra-bridgehead:alpine-3.3
