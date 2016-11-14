@@ -8,7 +8,7 @@ Ansible role for {{ cookiecutter.role_name }}.
 Requirements
 ------------
 
-The dependencies on other softwares/librarys for this role.
+The dependencies on other softwares/libraries for this role.
 
 - Debian
 - Alpine Linux
