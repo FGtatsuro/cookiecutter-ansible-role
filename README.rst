@@ -29,7 +29,7 @@ You can create new project of Ansible role as follows.
 
     role_project_name [Project name of Ansible role]: project_name
     role_name [Ansible role name]: role_name
-    year [2016]:
+    year [2017]:
     author [Your Github username]: FGtatsuro
 
     $ cd project_name
